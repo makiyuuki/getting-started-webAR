@@ -15,10 +15,21 @@
 
         <!-- マーカーを登録（デフォルトで設定されている「hiro」マーカー） -->
         <a-marker preset="hiro">
-            <!-- マーカーの場所に立方体を置く -->
-            <a-box 
+            <!-- マーカーの場所にオブジェクトを置く -->
+            <a-cube
             position="0 0 0"
-            wireframe="true"></a-box>
+            wireframe="true"
+            wireframe-linewidth="4">
+                <a-animation
+                    attribute="rotation"
+                    from="0 0 0 "
+                    to="180 180 180"
+                    direction="alternate"
+                    dur="5000"
+                    repeat="indefinite"
+                    >
+                </a-animation>
+            </a-cube>
         </a-marker>
         
         <a-entity camera
