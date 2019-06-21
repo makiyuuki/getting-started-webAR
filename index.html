@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>practice_webAR</title>
+        <script src="./js/aframe.min.js"></script>
+        <script src="./js/aframe-ar.min.js"></script>
     </head>
 
-    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    
     <body>
         <a-scene embedded arjs="debugUIEnabled:false;">
             
@@ -57,7 +56,7 @@
                     </a-animation>
                 </a-sphere>
             </a-marker>
-            
+
             <a-entity camera></a-entity>
             
         </a-scene>
